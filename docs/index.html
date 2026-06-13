@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>PvZ SD (v2.9.2.1) - By JoaoStar</title>
+  <title>PvZ SD (v2.9.2.1.1) - By JoaoStar</title>
   <style>
     body {
       color: #ffffff;
@@ -184,9 +184,9 @@
       }
 
       vm.setTurboMode(false);
-      if (vm.setInterpolation) vm.setInterpolation(true);
+      if (vm.setInterpolation) vm.setInterpolation(false);
       if (vm.setFramerate) vm.setFramerate(30);
-      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
+      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
         fencing: false,
         miscLimits: false,
